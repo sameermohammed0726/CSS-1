@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple CSS Example</title>
+    <!-- Internal CSS -->
+    <style>
+        /* Add some styles to the div elements */
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+    <!-- External CSS (You can save this in a separate .css file) -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- Inline CSS -->
+    <div style="border: 2px solid red;">
+        <p>This is a div with inline CSS.</p>
+    </div>
+
+    <!-- Internal CSS -->
+    <div class="box">
+        <p>This is a div with internal CSS.</p>
+    </div>
+
+    <!-- External CSS -->
+    <div class="box">
+        <p>This is a div with external CSS.</p>
+    </div>
+
+    <!-- External CSS + Inline CSS (Inline takes precedence) -->
+    <div class="box" style="background-color: yellow;">
+        <p>This is a div with both external and inline CSS. Inline takes precedence.</p>
+    </div>
+</body>
+</html>
